@@ -23,9 +23,9 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">96.66% </span>
+                <span class="strong">96.87% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>58/60</span>
+                <span class='fraction'>62/64</span>
             </div>
         
             
@@ -37,16 +37,16 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">80% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>4/4</span>
+                <span class='fraction'>4/5</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">96.66% </span>
+                <span class="strong">96.87% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>58/60</span>
+                <span class='fraction'>62/64</span>
             </div>
         
             
@@ -122,7 +122,12 @@
 <a name='L57'></a><a href='#L57'>57</a>
 <a name='L58'></a><a href='#L58'>58</a>
 <a name='L59'></a><a href='#L59'>59</a>
-<a name='L60'></a><a href='#L60'>60</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<a name='L60'></a><a href='#L60'>60</a>
+<a name='L61'></a><a href='#L61'>61</a>
+<a name='L62'></a><a href='#L62'>62</a>
+<a name='L63'></a><a href='#L63'>63</a>
+<a name='L64'></a><a href='#L64'>64</a>
+<a name='L65'></a><a href='#L65'>65</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-yes">3x</span>
@@ -136,12 +141,6 @@
 <span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
@@ -167,7 +166,10 @@
 <span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
@@ -181,73 +183,86 @@
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span></td><td class="text"><pre class="prettyprint lang-js">module.exports = {
-    obterFaixas: function () {
-        let faixas = [];
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">module.exports = {
+  obterFaixas: function () {
+    let faixas = [];
 &nbsp;
-        const faixa01 = { inicioFaixa: 0, fimFaixa: 1320.00, aliquota: 0.075 }
-        const faixa02 = { inicioFaixa: 1320.02, fimFaixa: 2571.29, aliquota: 0.09 }
-        const faixa03 = { inicioFaixa: 2571.30, fimFaixa: 3856.94, aliquota: 0.12 }
-        const faixa04 = { inicioFaixa: 3856.95, fimFaixa: 7507.49, aliquota: 0.14 }
-        const teto = { inicioFaixa: 7507.50, fimFaixa: 1_000_000, aliquota: -1 }
+    const faixa01 = { inicioFaixa: 0, fimFaixa: 1320.0, aliquota: 0.075 };
+    const faixa02 = { inicioFaixa: 1320.02, fimFaixa: 2571.29, aliquota: 0.09 };
+    const faixa03 = { inicioFaixa: 2571.3, fimFaixa: 3856.94, aliquota: 0.12 };
+    const faixa04 = { inicioFaixa: 3856.95, fimFaixa: 7507.49, aliquota: 0.14 };
+    const teto = { inicioFaixa: 7507.5, fimFaixa: 1000000, aliquota: -1 };
 &nbsp;
-        faixas.push(faixa01, faixa02, faixa03, faixa04, teto);
+    faixas.push(faixa01, faixa02, faixa03, faixa04, teto);
 &nbsp;
-        return faixas;
-    },
+    return faixas;
+  },
 &nbsp;
-    calcularDescontoFaixa: function (faixa) {
-        let totalFaixa = faixa.fimFaixa - faixa.inicioFaixa;
-        let descontoFaixa = totalFaixa * faixa.aliquota;
+  calcularDescontoFaixa: <span class="fstat-no" title="function not covered" >function (faixa) {},</span>
 &nbsp;
-        return descontoFaixa;
-    },
+  calcularDescontoResidual: function (salarioBruto, faixaAnterior, faixaAtual) {
+    let residual = salarioBruto - faixaAnterior.fimFaixa;
+    const descontoFaixa = residual * faixaAtual.aliquota;
+    return descontoFaixa;
+  },
 &nbsp;
-    calcularDescontoResidual: function (salarioBruto, faixaAnterior, faixaAtual) {
-        let residual = salarioBruto - faixaAnterior.fimFaixa;
-        const descontoFaixa = residual * faixaAtual.aliquota;
-        return descontoFaixa;
-    },
+  calcularDescontoProgressivo: function (salarioBruto) {
+    const TETO_INSS = 877.24;
 &nbsp;
+    let descontoFaixas = [];
+    let faixas = this.obterFaixas();
 &nbsp;
-    calcularDescontoProgressivo: function (salarioBruto) {
-        const TETO_INSS = 877.24;
+    if (salarioBruto &gt;= faixas[faixas.length - 1].inicioFaixa) <span class="branch-0 cbranch-no" title="branch not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >      return TETO_INSS;</span>
+<span class="cstat-no" title="statement not covered" >    }</span>
 &nbsp;
-        let descontoFaixas = [];
-        let faixas = this.obterFaixas();
+    for (let i = 0; i &lt; faixas.length; i++) {
+      const faixaAtual = faixas[i];
 &nbsp;
-        if(salarioBruto &gt;= faixas[faixas.length -1].inicioFaixa)<span class="branch-0 cbranch-no" title="branch not covered" >{</span>
-<span class="cstat-no" title="statement not covered" >            return TETO_INSS;</span>
-<span class="cstat-no" title="statement not covered" >        }</span>
-&nbsp;
-        for (let i = 0; i &lt; faixas.length; i++) {
-            const faixaAtual = faixas[i];
-&nbsp;
-            if (salarioBruto &gt;= faixaAtual.fimFaixa) {
-                const descontoFaixa = this.calcularDescontoFaixa(faixaAtual);
-                descontoFaixas.push(descontoFaixa);
-            }
-            else {
-                const faixaAnterior = faixas[i &lt;= 0<span class="branch-0 cbranch-no" title="branch not covered" > ? i - 1 </span>: i];
-                const descontoFaixa = this.calcularDescontoResidual(salarioBruto, faixaAnterior, faixaAtual);
-                descontoFaixas.push(descontoFaixa);
-                break;
-            }
-        }
-&nbsp;
-        let descontoINSS = descontoFaixas.reduce((acumulado, atual) =&gt; acumulado + atual, 0);
-&nbsp;
-        //(n * 100) / 100 - utilizado para fazer o arredondamento para 2 casas decimais
-        return Math.round(descontoINSS * 100) / 100;
+      if (salarioBruto &gt;= faixaAtual.fimFaixa) {
+        const descontoFaixa = this.calcularDescontoFaixa(faixaAtual);
+        descontoFaixas.push(descontoFaixa);
+      } else {
+        const faixaAnterior = faixas[i &lt;= 0<span class="branch-0 cbranch-no" title="branch not covered" > ? i - 1 </span>: i];
+        const descontoFaixa = this.calcularDescontoResidual(
+          salarioBruto,
+          faixaAnterior,
+          faixaAtual
+        );
+        descontoFaixas.push(descontoFaixa);
+        break;
+      }
     }
-}</pre></td></tr></table></pre>
+&nbsp;
+    let descontoINSS = descontoFaixas.reduce(
+      (acumulado, atual) =&gt; acumulado + atual,
+      0
+    );
+&nbsp;
+    //(n * 100) / 100 - utilizado para fazer o arredondamento para 2 casas decimais
+    return Math.round(descontoINSS * 100) / 100;
+  },
+&nbsp;
+  calcularDescontoFaixa: function (faixa) {
+    return (faixa.fimFaixa - faixa.inicioFaixa) * faixa.aliquota;
+  },
+};
+&nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
             </div><!-- /wrapper -->
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2023-09-29T10:58:57.037Z
+                at 2023-09-29T18:42:15.862Z
             </div>
         <script src="prettify.js"></script>
         <script>
